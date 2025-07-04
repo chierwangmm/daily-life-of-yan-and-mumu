@@ -87,10 +87,42 @@
       document.body.appendChild(bubble);
       setTimeout(() => bubble.remove(), 2000);
     });
-  </script>
-<p style="text-align:center; margin-top:40px;">
-  <a href="yan_mumu_love_page.html" style="color: #fff; font-size: 20px; text-decoration: underline;">
-    👉 点我跳转到第二个页面
+ <style>
+  .heart-jump {
+    width: 60px;
+    height: 60px;
+    animation: pulse 1.5s infinite;
+    filter: drop-shadow(0 0 6px #ff80ab);
+    transition: transform 0.2s ease;
+  }
+
+  .heart-jump:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 12px #ff4081);
+  }
+
+  @keyframes pulse {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+
+  .jump-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .jump-text {
+    color: white;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+</style>
+
+<div class="jump-container">
+  <a href="yan_mumu_love_page.html" title="点开我，就能听见他心里的声音。">
+    <img class="heart-jump" src="https://i.imgur.com/wHy0ycy.png" alt="Pixel Heart">
   </a>
-</p></body>
+  <p class="jump-text">点我跳转💗</p>
+</div> </body>
 </html>
